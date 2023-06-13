@@ -81,7 +81,7 @@ WORKDIR /
 #Install nanoev
 WORKDIR /opt
 Run git clone https://github.com/jade-nhri/nanoev.git
-RUN chmod +x *.py
+RUN chmod +x nanoev/*.py
 WORKDIR /
 
-ENV PATH $PATH:/opt:/opt/ncbi-blast-2.13.0+/bin/:/opt/minimap2:/opt/htslib:/opt/bcftools:/opt/samtools-1.13
+ENV PATH $PATH:/opt:/opt/nanoev:/opt/ncbi-blast-2.13.0+/bin/:/opt/minimap2:/opt/htslib:/opt/bcftools:/opt/samtools-1.13
