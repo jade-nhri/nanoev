@@ -16,7 +16,7 @@ parser.add_argument('-c', help='read count (default=200)')
 
 args = parser.parse_args()
 
-refgenomes='/MyData/mnt/nas40T/frchen/20210303_EV11/EV.fasta.concor_20210303.fasta'
+refgenomes='/opt/nanoev/EV.fasta.concor_20210303.fasta'
 comm='makeblastdb -in {0} -dbtype nucl'.format(refgenomes)
 subprocess.getoutput(comm)
 
