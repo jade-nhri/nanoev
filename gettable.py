@@ -65,7 +65,7 @@ def getorf(infile):
         if orfpos<200: 
             upstream=seq[orfpos-150:orfpos+150] 
         else: 
-            upstream=seq[:orfpos+150] 
+            upstream=seq[:orfpos+180] 
         if upstream!='':
             for i in range (0,3): 
                 upseq=upstream[i:] 
