@@ -11,7 +11,7 @@ Cost-Effective Complete Genome Sequencing Using the MinION Platform for Identifi
 
 ``docker run --runtime=nvidia -h nanoev --name nanoev -i -t -v /:/MyData nanoev:v1 /bin/bash``
 
-Please note that you need to run “conda activate homopolish” and "conda run -n homopolish pip3 install --upgrade pandas" before running nanoev.py.
+Please note that you need to run “conda activate homopolish” and "conda run -n homopolish pip3 install --upgrade pandas pyarrow" before running nanoev.py.
 
 Installation
 ------------
