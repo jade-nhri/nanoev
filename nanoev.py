@@ -180,12 +180,12 @@ def getconsensus(bc):
 
 
 def getevinfo(bc,iteri):
-    comm='getrefs1.py -i {0}/{1}_clean.fa -m {0}/{1}_out.paf'.format(outdir,bc) 
+    comm='getrefs.py -i {0}/{1}_clean.fa -m {0}/{1}_out.paf'.format(outdir,bc) 
     #print (comm)
     stdout=subprocess.getoutput(comm)
     if os.path.exists('{0}/{1}_clean_ref.fa'.format(outdir,bc)) and os.path.getsize('{0}/{1}_clean_ref.fa'.format(outdir,bc))==0:
         preprocess(bc,minlen-1500)
-        comm='getrefs1.py -i {0}/{1}_clean.fa -m {0}/{1}_out.paf'.format(outdir,bc)
+        comm='getrefs.py -i {0}/{1}_clean.fa -m {0}/{1}_out.paf'.format(outdir,bc)
         #print (comm)
         stdout=subprocess.getoutput(comm)
 
