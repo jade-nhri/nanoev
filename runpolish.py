@@ -6,8 +6,8 @@ import numpy as np
 
 indir=os.path.abspath(sys.argv[1])
 infile=sys.argv[2]
-refgenome='/MyData/mnt/nas40T/frchen/20210303_EV11/EV.fasta.concor_20210303.fasta'
-refUTR='/MyData/mnt/nas40T/frchen/20191217_Lee_EV3_FLO-FLG001_SQK-LSK109_EXP-NBD104/20210922_Run/EV71_UTR.fa'
+refgenome='/opt/nanoev/EV.fasta.concor_20210303.fasta'
+refUTR='/opt/nanoev/EV71_UTR.fa'
 outdir=infile.replace('_final.fasta','_homopolish')
 
 comm='grep "TTTTTTTTTT" {0}/{1}/{2}'.format(indir,infile.replace('_final.fasta',''),infile)
