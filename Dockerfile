@@ -65,6 +65,15 @@ WORKDIR /opt
 RUN wget https://github.com/shenwei356/seqkit/releases/download/v2.2.0/seqkit_linux_amd64.tar.gz
 RUN tar -xvf seqkit_linux_amd64.tar.gz
 RUN cp seqkit /usr/local/bin
+#Install nanoev
+WORKDIR /opt
+Run git clone https://github.com/jade-nhri/nanoev.git
+RUN gunzip nanoev/EV.fasta.concor_20210303.fasta.gz
+RUN chmod +x nanoev/*.py
+WORKDIR /
+
+ENV PATH $PATH:/opt:/opt/nanoev:/opt/ncbi-blast-2.13.0+/bin/:/opt/minimap2:/opt/htslib:/opt/bcftools:/opt/samtools-1.13
+
 # Install miniconda
 WORKDIR /opt
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
@@ -74,15 +83,6 @@ ENV PATH=$PATH:/opt/conda/bin
 WORKDIR /opt
 RUN git clone  https://github.com/ythuang0522/homopolish.git
 WORKDIR /opt/homopolish
+RUN chmod +x homopolish.py
 RUN conda env create -f environment.yml
-RUN chmod +x *.py
 WORKDIR /
-
-#Install nanoev
-WORKDIR /opt
-Run git clone https://github.com/jade-nhri/nanoev.git
-RUN gunzip nanoev/EV.fasta.concor_20210303.fasta.gz
-RUN chmod +x nanoev/*.py
-WORKDIR /
-
-ENV PATH $PATH:/opt:/opt/nanoev:/opt/ncbi-blast-2.13.0+/bin/:/opt/minimap2:/opt/htslib:/opt/bcftools:/opt/samtools-1.13
