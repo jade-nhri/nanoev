@@ -81,7 +81,7 @@ WORKDIR /
 #Install nanoev
 WORKDIR /opt
 Run git clone https://github.com/jade-nhri/nanoev.git
-RUN gunzip EV.fasta.concor_20210303.fasta.gz
+RUN gunzip nanoev/EV.fasta.concor_20210303.fasta.gz
 RUN chmod +x nanoev/*.py
 WORKDIR /
 
