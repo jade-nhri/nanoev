@@ -39,3 +39,7 @@ Installation
 - [blast-2.13.0](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/)
 - [miniconda](https://repo.anaconda.com/miniconda)
 - [homopolish](https://github.com/ythuang0522/)
+
+## FASTQ files
+
+https://drive.google.com/drive/folders/1O0DfX0YB-Qayz2IFxaC11SGDSha7ush2?usp=drive_link
