@@ -42,4 +42,6 @@ Installation
 
 ## FASTQ files
 
-https://drive.google.com/drive/folders/1O0DfX0YB-Qayz2IFxaC11SGDSha7ush2?usp=drive_link
+https://drive.google.com/drive/folders/1O0DfX0YB-Qayz2IFxaC11SGDSha7ush2?usp=sharing
+
+
