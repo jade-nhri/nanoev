@@ -44,6 +44,6 @@ Installation
 
 https://drive.google.com/drive/folders/1O0DfX0YB-Qayz2IFxaC11SGDSha7ush2?usp=sharing
 
-## FASTQ files
+## Quick start
 
-https://www.dropbox.com/s/iil6zo5wss828ce/Manual%20of%20nanoEV.pdf?dl=0
+- [Readme](https://www.dropbox.com/s/iil6zo5wss828ce/Manual%20of%20nanoEV.pdf?dl=0)
