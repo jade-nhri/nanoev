@@ -46,4 +46,4 @@ https://drive.google.com/drive/folders/1O0DfX0YB-Qayz2IFxaC11SGDSha7ush2?usp=sha
 
 ## Quick start
 
-- [Readme]([https://www.dropbox.com/scl/fi/zvv0jel518ijyvjwsbhgp/Manual-of-nanoEV.pdf?rlkey=fe9l6tdrybm7bpremsikvw55o&dl=0)
+- [Readme]([https://www.dropbox.com/scl/fi/zvv0jel518ijyvjwsbhgp/Manual-of-nanoEV.pdf?rlkey=fe9l6tdrybm7bpremsikvw55o&dl=0])
